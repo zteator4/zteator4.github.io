@@ -3,147 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zander Teator | Babson Academic Portfolio</title>
-    <style>
-      /* General Styles */
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        color: #333;
-        background-color: #f4f4f4;
-      }
-
-      .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-        padding: 20px 0;
-      }
-
-      /* Navigation - Using Babson Green */
-      nav {
-        background: #004d40;
-        color: #fff;
-        padding-top: 10px;
-        min-height: 70px;
-        border-bottom: #f4f4f4 3px solid;
-      }
-
-      nav h1 {
-        float: left;
-        margin: 0;
-        padding-bottom: 10px;
-      }
-
-      nav ul {
-        float: right;
-        list-style: none;
-        margin-top: 10px;
-      }
-
-      nav li {
-        display: inline;
-        padding: 0 20px;
-      }
-
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      /* Header/About Section */
-      header {
-        background: #fff;
-        padding: 40px 0;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ddd;
-      }
-
-      /* Year Blocks */
-      .year-block {
-        border-left: 5px solid #004d40;
-        padding-left: 20px;
-        margin-bottom: 40px;
-        background: #fff;
-        padding: 25px;
-        border-radius: 0 8px 8px 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      }
-
-      .course-card {
-        background: #e0f2f1;
-        padding: 15px;
-        margin: 15px 0;
-        border-radius: 5px;
-        border-left: 3px solid #00695c;
-      }
-
-      h2 {
-        color: #004d40;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      footer {
-        text-align: center;
-        padding: 30px;
-        background: #333;
-        color: #fff;
-        margin-top: 40px;
-      }
-    </style>
+    <title>ZT3 | Career Dashboard</title>
+    <link rel="stylesheet" href="/css/baseball.css" />
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <h1>Zander Teator</h1>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#curriculum">Coursework</a></li>
-          <li>
-            <a href="https://www.alexanderteator.com" target="_blank"
-              >Main Portfolio</a
-            >
-          </li>
-        </ul>
+    <nav class="glass-nav">
+      <div class="nav-content">
+        <span class="logo">ZT.STATCAST</span>
+        <div class="nav-links">
+          <a href="#college">College</a>
+          <a href="#highschool">High School</a>
+          <a href="#youth">Youth</a>
+        </div>
       </div>
     </nav>
 
-    <header id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I am a senior baseball captain at Babson College with experience in
-          digital strategy and growth-focused marketing. I am pursuing roles in
-          the sports and sports-tech space at the intersection of product,
-          partnerships, and strategy, where I can help build scalable systems
-          and solve business problems in performance-driven environments.
-        </p>
-      </div>
-    </header>
-
-    <section id="curriculum">
-      <div class="container">
-        <h2>Academic Evolution</h2>
-
-        <div class="year-block">
-          <h3>Senior Year Highlights</h3>
-          <div class="course-card">
-            <h4>Performance Marketing & Web Tech</h4>
+    <main class="dashboard-container">
+      <section id="college" class="exhibit-section">
+        <div class="hero-card">
+          <div class="badge">CAPTAIN</div>
+          <div class="hero-content">
+            <span class="era-tag">2023 - 2026</span>
+            <h2>Babson College</h2>
             <p>
-              <strong>Projects:</strong> Developing mock Meta campaigns for
-              Saratoga 250 and building this secondary portfolio via GitHub and
-              VS Code.
+              Leading the program through the final inning of a collegiate
+              career.
             </p>
+            <div class="stat-grid">
+              <div class="stat-pill"><b>POS</b> <span>P / INF</span></div>
+              <div class="stat-pill"><b>DIV</b> <span>NCAA DIII</span></div>
+              <div class="stat-pill"><b>STATUS</b> <span>Senior</span></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <p>&copy; 2026 | Babson College | Senior Baseball Captain</p>
+      <section id="highschool" class="exhibit-section">
+        <div class="data-grid">
+          <div class="stat-card">
+            <h3>Saratoga Varsity</h3>
+            <span class="era-tag">2021 - 2022</span>
+            <p>Competing at the highest level of Section II baseball.</p>
+            <div class="ticker">
+              <span>HS Highlights: Saratoga Springs High School</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <h3>Travel & Summer</h3>
+            <span class="era-tag">Barnstormers / Lightning</span>
+            <p>Elite regional play through 15U-18U circuits.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="youth" class="exhibit-section">
+        <div class="data-grid">
+          <div class="stat-card">
+            <h3>The Foundation</h3>
+            <span class="era-tag">2013 - 2016</span>
+            <p>SALL Minors & Majors. Where the journey began.</p>
+          </div>
+          <div class="stat-card">
+            <h3>All-Stars</h3>
+            <span class="era-tag">8U - 12U</span>
+            <p>Cal Ripken All-Star selections for Saratoga Springs.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Comprehensive Career Data | 2013 - 2026</p>
     </footer>
   </body>
 </html>
